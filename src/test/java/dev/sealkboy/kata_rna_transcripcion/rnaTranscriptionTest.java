@@ -22,8 +22,8 @@ class RnaTranscriptionTest {
     void testTranscribeWithUnknownCharacters() {
         RnaTranscription rnaTranscription = new RnaTranscription();
 
-        String dna = "ACGTX";
-        String expectedRna = "UGCAX";
+        String dna = "ACGTB";
+        String expectedRna = "UGCAB";
 
         String result = rnaTranscription.transcribe(dna);
 
@@ -46,8 +46,8 @@ class RnaTranscriptionTest {
     void testTranscribeWithLowercaseInput() {
         RnaTranscription rnaTranscription = new RnaTranscription();
 
-        String dna = "acgt";
-        String expectedRna = "acgt"; // Assuming case-sensitive handling
+        String dna = "actg";
+        String expectedRna = "actg"; 
 
         String result = rnaTranscription.transcribe(dna);
 
